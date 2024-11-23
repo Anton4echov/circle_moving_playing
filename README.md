@@ -1,13 +1,5 @@
 This Red Circle moving around Canvas. 
-If You click and move to this circle it will move and Follow to Your Mouse coordinates
+If You click and move to this circle it will move and Follow to Your Mouse or TouchScreen coordinates
 
-work in Progress)
-
-Touchpad Still not Working.
-
-will do improvement
-if you know solution for touch Let me know in comments
-Thank You
-
-i Run and test this code here
-https://jsbin.com/hawevotebo/edit?html,js,output
+running code here
+https://jsbin.com/weroxabeti/edit?html,js,output
