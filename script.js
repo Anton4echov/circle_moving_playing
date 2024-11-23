@@ -66,8 +66,8 @@ setInterval(draw, 16);
 // Touch event handlers
 function handleTouchStart(e) {
   isMoving = true;
-//  canvasX = e.clientX;
-//  canvasY = e.clientY;
+  canvasX = e.clientX;
+  canvasY = e.clientY;
   touchX = e.touches[0].clientX;
   touchY = e.touches[0].clientY;
   offsetX = canvasX - touchX;
