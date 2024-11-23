@@ -8,3 +8,6 @@ Touchpad Still not Working.
 will do improvement
 if you know solution for touch Let me know in comments
 Thank You
+
+i Run and test this code here
+https://jsbin.com/hawevotebo/edit?html,js,output
