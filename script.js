@@ -37,7 +37,7 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.radius, 0, 2 * Math.PI);
-  ctx.fillStyle = 'red';
+  ctx.fillStyle = 'green';
   ctx.fill();
   
   ball.x += ball.vx;
@@ -66,8 +66,8 @@ setInterval(draw, 16);
 // Touch event handlers
 function handleTouchStart(e) {
   isMoving = true;
-  canvasX = e.clientX;
-  canvasY = e.clientY;
+  canvasX = e.touches[0].clientX;
+  canvasY = e.touches[0].clientY;
   touchX = e.touches[0].clientX;
   touchY = e.touches[0].clientY;
   offsetX = canvasX - touchX;
@@ -76,12 +76,12 @@ function handleTouchStart(e) {
 
 function handleTouchMove(e) {
   if (isMoving) {
-//    e.preventDefault();
+    //e.preventDefault();
     ball.x = e.touches[0].clientX + offsetX;
     ball.y = e.touches[0].clientY + offsetY;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
-    ctx.arc(ball.x, ball.y, ball.radius, 0, 2 * Math.PI);
+    ctx.arc(ball.x,ball.y, ball.radius, 0, 2 * Math.PI);
     ctx.fillStyle = 'blue';
     ctx.fill();
   }
@@ -112,10 +112,6 @@ function handleMouseMove(e) {
     ctx.fillStyle = 'blue';
     ctx.fill();
 
-/*    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.setTransform(1, 0, 0, 1, canvasX, canvasY);
-    ctx.fillStyle = 'red';
-    ctx.fillRect(100, 100, 200, 200);*/
   }
 }
 
